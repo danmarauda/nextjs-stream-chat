@@ -1,9 +1,9 @@
 import { createEnv } from "@t3-oss/env-nextjs";
 import { z } from "zod";
 
-export const env = createEnv({
+export const env =createEnv({
   server: {
-    STREAM_SECRET: z.string().min(1),
+    STREAM_SECRET: z.string().min(1), 
     CLERK_SECRET_KEY: z.string().min(1),
     CLERK_WEBHOOK_SECRET: z.string().min(1),
     WEB_PUSH_PRIVATE_KEY: z.string().min(1),
